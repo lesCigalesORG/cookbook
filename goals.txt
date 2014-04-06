@@ -1,0 +1,40 @@
+
+ - uploader des images et les integrer aux articles facilement
+
+3. generation des pages statiques des utilisateurs
+4 .commentaires
+5. page d index
+
+traduction francaise gettext
+refresh de la page index et des articles quand nouveau commentaire ?
+commentaire: parsing des urls + code + etc...
+
+
+comparer le nombre de liens references sur www et sur faq
+
+pas de generation de cache quand appelé avec lynx ??
+
+
+
+- table des matieres ?
+
+penser aux questions les plus frequentes (et ouais la FAQ DUH!)
+
+
+Gerer les differentes versions:
+http://bakery.cakephp.org/articles/alkemann/2008/12/18/revision-behavior-revision-control-made-easy#page-4
+code from:
+http://code.google.com/p/alkemann/source/browse/trunk/models/behaviors/revision.php?r=252
+
++ afficher les contributeurs d un article ? (low priority)
+
+TODO
+- upload image
+- commentaires anonymes
+- commentaires des users loggués
+
+
+refaire menu avec categories si statique (et un lien pour l admin quelque part) -> lien de chaque menu affiche toute les docs dispos
+faire un RSS pour afficher les derniers articles ailleurs (control panel, site officiel)
+
+virer les last members
