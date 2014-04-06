@@ -2,7 +2,8 @@
 
 class AppController extends Controller {
 
-  var $uses = array('Article', 'User', 'Comment');
+// otherwise static controller would try to load Static model!!!
+//   var $uses = array('Article', 'User');
 
   function forceIdentification() {
     if (! $this->Session->check('User.id')) {

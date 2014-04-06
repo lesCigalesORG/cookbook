@@ -3,7 +3,6 @@
 class Article extends AppModel
 {
   var $name = 'Article';
-  var $hasMany = array('Comment');
   var $belongsTo = array('Category'); //, 'User');
   var $actsAs = array('Revision');
 
