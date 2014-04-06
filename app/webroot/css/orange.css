@@ -1,0 +1,36 @@
+body {
+  background-color: #ffc000;
+}
+#container {
+  color: #333;
+  background-color: #fff;
+}
+#header {
+  background-color: #ffc000;
+}
+#footer {
+  background-color: #ffc000;
+}
+a:active, a:hover, a {
+  color: #333;
+}
+ul.menu {
+  background-color: #ff8e00;
+}
+ul.menu li a {
+  color: #fff;
+  background-color: #ff8e00;
+  border-right: 1px solid #ffc000;
+}
+
+ul.menu li a:hover {
+  background-color: #ffb600;
+  color: #fff;
+}
+h3.title {
+  border: 1px solid #ffc000;
+  background-color: #ffd668;
+}
+
+
+

@@ -1,0 +1,62 @@
+body {
+  background-color: #e9defc;
+/*   background-color: #333; */
+/*   color: #fff; */
+}
+#container {
+  color: #333;
+  background-color: #fff;
+}
+#header {
+  background-color: #e9defc;
+/*   background-color: #333; */
+}
+#footer {
+  background-color: #e9defc;
+/*   background-color: #333; */
+}
+a:active, a:hover, a {
+  color: #333;
+}
+body a {
+/*   color: #ff6600; */
+}
+ul.menu {
+  background-color: #8650b3;
+}
+ul.menu li a {
+  color: #fff;
+  background-color: #8650b3;
+  border-right: 1px solid #e9defc;
+}
+
+ul.menu li a:hover {
+  background-color: #9673b3;
+  color: #fff;
+}
+h3.title {
+  border: 1px solid #9673b3;
+  background-color: #f7effd;
+}
+/* Form */
+#loginform {
+  border: 1px solid #8650b3;
+  background-color: #f7effd;
+}
+#loginform p.subtitle {
+  border-bottom: 1px solid #8650b3;
+}
+#article a, table a {
+  color: #8650b3;
+}
+
+table th {
+  background-color:#9673b3;
+}
+/* Code highlighting */
+pre {
+/*   border: 1px solid #efe6ff; */
+}
+fieldset {
+  border: 1px solid #efe6ff;
+}

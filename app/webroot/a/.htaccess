@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ /static/article/$1 [QSA,L]
+#    RewriteRule ^(.*)$ /articles/view/$1 [QSA,L]
+</IfModule>
