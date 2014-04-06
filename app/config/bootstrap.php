@@ -33,3 +33,4 @@ function remove_accent($str)
              'i', 'O', 'o', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'A', 'a', 'AE', 'ae', 'O', 'o');
   return str_replace($a, $b, $str);
 }
+?>
