@@ -26,10 +26,15 @@ foreach ($users as $user) {
   if ($num == 0) {
     continue;
   }
+  
+  $image = '/img/user-default.png';
+  if (file_exists(WWW_ROOT . 'p/user-' . $u['id'] . '.png')) {
+    $image = '/p/user-' . $u['id'] . '.png';
+  }
 
   ?>
   <div class="user">
-    <img src="/p/user-<?php echo $u['id']; ?>.png" />
+    <img src="<?php echo $image; ?>" />
     <span class="name"><?php echo $name; ?></span> <?php echo $num; ?> contribution(s).<br />
     <ul>
     <?php
