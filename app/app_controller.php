@@ -18,14 +18,4 @@ class AppController extends Controller {
     }
   }
 
-
-  /** Generate list of last 5 elements for the footer */
-  function beforeFilter() {
-
-    $this->set('lastarticles', $this->Article->last5());
-    $this->set('lastusers', $this->User->last5());
-    $this->set('lastcomments', $this->Comment->last5());
-
-  }
-
 }

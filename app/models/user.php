@@ -35,16 +35,6 @@ class User extends AppModel
     return $this->find(array('username' => $username));
   }
 
-  function last5() {
-    $users = $this->find('all', array('fields' => array('id', 'name'), 
-      'order' => array('User.id' => 'desc'), 'limit' => 5));
-
-/*    for ($i = 0; isset($articles[$i]); $i++) {
-      $articles[$i]['Article']['path'] =
-        $this->genName($articles[$i]['Article']['id'], $articles[$i]['Article']['name']);
-    }*/
-    return $users;
-  }
 
   // Just to generate a random entry for dump .. not used in web app:
   function _generateMD5Salt()
