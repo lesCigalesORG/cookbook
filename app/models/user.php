@@ -46,5 +46,28 @@ class User extends AppModel
     return $users;
   }
 
+  // Just to generate a random entry for dump .. not used in web app:
+  function _generateMD5Salt()
+  {
+    $MD5Salt = '$1$';
+    /* We are supposed to fill the salt with 8 characters for MD5 */
+    $chars = "0123456789abcdefghijklmopqrstuvwxyz";
+    for ($i = 0; $i < 8; $i++)
+      {
+          $MD5Salt .= $chars[rand(0, strlen($chars)-1)];
+      }
+    $MD5Salt .= '$';
+    return $MD5Salt;
+  }
+  function encrypt($string)
+  {
+    /* If MD5 is not present on the system, exit with an error */
+    if (CRYPT_MD5 !== 1) {
+      die("You need to support CRYPT_MD5");
+    }
+    $MD5Salt = $this->_generateMD5Salt();
+    $encrypted = crypt($string, $MD5Salt);
 
+    return $encrypted;
+  }
 }
