@@ -12,8 +12,15 @@ echo $content;
 
 <br class="clear" />
 
+<?php
+$image = '/img/user-default.png';
+if (file_exists(WWW_ROOT . 'p/user-' . $user['User']['id'] . '.png')) {
+  $image = '/p/user-' . $user['User']['id'] . '.png';
+}
+?>
+
 <div class="user">
-  <img src="/p/user-<?php echo $user['User']['id']; ?>.png" />
+  <img src="<?php echo $image; ?>" />
   <span class="name">Auteur: <?php echo $user['User']['name']; ?></span> <?php echo sizeof($user['Article']); ?> contribution(s).<br />
   <ul>
   <?php
