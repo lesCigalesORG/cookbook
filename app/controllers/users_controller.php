@@ -35,6 +35,7 @@ class UsersController extends AppController
 
   function settings()
   {
+    $this->loadModel('Article');
     $this->forceIdentification();
     $userID = $this->Session->read('User.id');
 
